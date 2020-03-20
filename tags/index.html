@@ -4,18 +4,18 @@
       <meta charset="UTF-8"/>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="">
+<meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="在寻求答案的路上，谁不是在流浪">
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#000">
 <title>各处的故事</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1584692976979">
+<link rel="shortcut icon" href="/favicon.ico?v=1584693219777">
 <link rel="stylesheet" href="/styles/main.css">
-<link rel="stylesheet" href="/media/css/pisces.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
 
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/github.css" rel="stylesheet">  
+<link href="/media/hljs/styles/androidstudio.css" rel="stylesheet">  
 
 <script src="/media/hljs/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
@@ -32,9 +32,9 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       
-<div class=" ">
-  <header class="header  ">
-    <div class="blog-header box-shadow-wrapper  " id="header">
+<div class=" gemini">
+  <header class="header bg-color ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
       <div class="nav-toggle" id="nav_toggle">
         <div class="toggle-box">
           <div class="line line-top"></div>
@@ -50,6 +50,8 @@
             </a>  
           
         </div>
+        
+          <p class="subtitle">精于心，简于形</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -126,7 +128,7 @@
     </div>
     <div class="main-continer">
       
-      <div class="section-layout  ">
+      <div class="section-layout  gemini">
         <div class="section-layout-wrapper">
           <div id="sidebarMeta" class="sidebar">
     
@@ -164,13 +166,27 @@
     
   
   
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+        
+          
+            <a class="social-img" href="#">
+              <img src="\media\images\custom-array-imgSocials-1584693219524-socialImg.jpg" />
+              <i class="fa fa-globe"></i> 乔啟
+            </a>
+          
+        
+      </div>
+    </div>
+  
 
 
 </div>
 </div>
 <script>
   let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = '';
+  let scheme = 'gemini';
   let sidebarWrapper = document.querySelector('.sidebar-wrapper');
   if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
     document.addEventListener('scroll', function(e) {
@@ -269,7 +285,7 @@
   </footer>
   
   
-  <div class=" back-to-top" id="back_to_top">
+  <div class="gemini back-to-top" id="back_to_top">
     <i class="fa fa-arrow-up"></i>
     
     <span class="scrollpercent">
@@ -281,6 +297,38 @@
   
   
     
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <div class="aplayer" id="aplayer"></div>
+  <input hidden id="player_cover" value="" />
+  <div class="music-list">
+  
+  </div>
+  <script>
+  let musics = document.querySelector('.music-list').children;
+  let mediaMusic = [];
+  let cover = document.querySelector('#player_cover').value;
+  for (let i = 0; i < musics.length; i++) {
+    let item = musics[i];
+    let splits = item.value.split(',');
+    mediaMusic.push({
+      name: splits[0],
+      artist: splits[1],
+      url: splits[2],
+      lrc: splits[3],
+      cover: cover
+    });
+  }
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      lrcType: 3,
+      listFolded: false,
+      listMaxHeight: 90,
+      audio: mediaMusic
+  });
+  </script>
+
 
   
 </div>
