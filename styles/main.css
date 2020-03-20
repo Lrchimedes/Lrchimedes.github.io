@@ -1895,12 +1895,12 @@ body {
     .nav-toggle .line {
       background-color: #eee !important;
     }.header {
-        width: 960px;
+        width: 1400px;
         margin: 0 auto;
       }
 
       .main-continer {
-        width: 960px;
+        width: 1400px;
         margin: 0 auto;
       }
     body {
@@ -2015,11 +2015,15 @@ body {
     .brand {
       background: #000;
     }
-    .main-title {
+    
+      .brand {
+        font-weight: bold;
+        transform: scale(1);
+      }.main-title {
       color: #FFF;
     }
     .mist .site-title i {
       background: #FFF;
-    }.box-shadow-wrapper {
-      box-shadow: none !important;
+    }.box-scale > #landlord {
+      transform: scale(1);
     }
