@@ -1,94 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" >
-
 <title>Lrchimedes' life</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="shortcut icon" href="https://Lrchimedes.top/favicon.ico?v=1584699518361">
 <link rel="stylesheet" href="https://Lrchimedes.top/styles/main.css">
-
-
-
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161427303-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-161427303-1');
 </script>
-
-
-    <meta name="description" content="在寻求答案的路上，谁不是在流浪">
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+<meta name="description" content="在寻求答案的路上，谁不是在流浪">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+</head>
+<body>
+<div id="app" class="main">
+ <div class="sidebar" :class="{ 'full-height': menuVisible }">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://Lrchimedes.top/post/about">
         <img src="https://Lrchimedes.top/images/avatar.png?v=1584699518361" class="site-logo">
 		  <h1 class="site-title">各处的故事</h1>
 		 </a>
+	   <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line">
+	    </div>
+       </div>
+     </div>	  
+   <div>  
 		
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-         <a href="/" class="site-nav">
-			  <i class="fa fa-home"> 首页</i> 
-		 </a>
+    <a href="/" class="site-nav">
+     <i class="fa fa-home"> 首 页</i> 
+    </a>
 		
-		 <a href="/tags" class="site-nav">
-            <i class="fa fa-tag"> 栏目</i> 		
-          </a>
+    <a href="/tags" class="site-nav">
+     <i class="fa fa-tag"> 栏 目</i> 		
+    </a>
              
-         <a href="/archives" class="site-nav">
-              <i class="fa fa-archive"> 归档</i> 
-	    </a>
+    <a href="/archives" class="site-nav">
+     <i class="fa fa-archive"> 归 档</i> 
+	</a>
         
-         
-        
-      
-       
-        
-      
     </div>
   </div>
   <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
-      
-          
-   
-          <a class="social-link" href="https://weibo.com/Lrchimedes" target="_blank">
+     
+          <a class="social-link" href="https://weibo.com/qiaoqi121" target="_blank">
             <i class="fab fa-weibo"></i>
-          </a>
+           </a>
 		
 		  <a class="social-link" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI1NjM3NzU4OQ==&scene=124#wechat_redirect" target="_blank">
             <i class="fab fa-weixin" ></i>
-          </a>
+           </a>
 		
-		  
-        
+          <a class="social-link" href="http://blog.leanote.com/lrchimedes" target="_blank">
+            <i class="fa fa-shower" ></i>
+           </a>
 		
-	
-      
-    </div>
+		</div>
+	  
     <div class="site-description">
       在寻求答案的路上，谁不是在流浪
     </div>
@@ -106,6 +83,23 @@
             
           
           
+          
+ <article class="post-item">
+   <div class="left">
+     <a href="https://Lrchimedes.top/post/hello-gridea/">
+              <h2 class="post-title"><strong>Lrchimedes' life</strong></h2>
+              <div class="post-date">2019.12.02</div>
+       <div class="post-abstract">
+              <p>欢迎来到 <strong>Lrchimedes' life</strong> ！<br>
+              每一刻都有新生，每一刻都有逝去，每刻都有无数的事情发生。事情被人们选择性的记下和忘去，我却不想遗忘过往的任何点滴。<strong>Lrchimedes' life</strong>,这里记录下每一次亲历、每一次疑问、每一次思考...</p>
+       </div>
+     </a>
+   </div>          
+   <a class="right" href="https://Lrchimedes.top/post/hello-gridea/">
+      <div class="feature-container" style="background-image: url('https://Lrchimedes.top/post-images/1511585022604.jpeg')">
+      </div>
+   </a>           
+</article>
           
             <article class="post-item">
               <div class="left">
@@ -128,8 +122,94 @@
                 </a>
               
             </article>
-          
+			
+			<article class="post-item">
+              <div class="left">
+                <a href="https://Lrchimedes.top/post/hello-gridea/">
+                  <h2 class="post-title">Hello Gridea</h2>
+                </a>
+                <div class="post-date">
+                  2018-12-12
+                </div>
+                <div class="post-abstract">
+                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
+                </div>
+              </div>
+              
+                <a class="right" href="https://Lrchimedes.top/post/hello-gridea/">
+                  <div class="feature-container" style="background-image: url('https://Lrchimedes.top/post-images/hello-gridea.png')">
+                  </div>
+                </a>
+              
+            </article>
+			
+			<article class="post-item">
+              <div class="left">
+                <a href="https://Lrchimedes.top/post/hello-gridea/">
+                  <h2 class="post-title">Hello Gridea</h2>
+                </a>
+                <div class="post-date">
+                  2018-12-12
+                </div>
+                <div class="post-abstract">
+                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://Lrchimedes.top/post/hello-gridea/">
+                  <div class="feature-container" style="background-image: url('https://Lrchimedes.top/post-images/hello-gridea.png')">
+                  </div>
+                </a>
+              
+            </article>
+			
+			<article class="post-item">
+              <div class="left">
+                <a href="https://Lrchimedes.top/post/hello-gridea/">
+                  <h2 class="post-title">Hello Gridea</h2>
+                </a>
+                <div class="post-date">
+                  2018-12-12
+                </div>
+                <div class="post-abstract">
+                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://Lrchimedes.top/post/hello-gridea/">
+                  <div class="feature-container" style="background-image: url('https://Lrchimedes.top/post-images/hello-gridea.png')">
+                  </div>
+                </a>
+              
+            </article>
+			
+			<article class="post-item">
+              <div class="left">
+                <a href="https://Lrchimedes.top/post/hello-gridea/">
+                  <h2 class="post-title">Hello Gridea</h2>
+                </a>
+                <div class="post-date">
+                  2018-12-12
+                </div>
+                <div class="post-abstract">
+                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://Lrchimedes.top/post/hello-gridea/">
+                  <div class="feature-container" style="background-image: url('https://Lrchimedes.top/post-images/hello-gridea.png')">
+                  </div>
+                </a>
+              
+            </article>
           <div class="pagination-container">
   
   
